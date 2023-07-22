@@ -37,7 +37,8 @@ export default function Hero() {
               <Image
                 className=" w-[750px] h-[600px]"
                 src="https://res.cloudinary.com/devtedcloud/image/upload/v1690019107/hapetch/hero-image_2_z1sqvq.svg"
-                alt=""
+                alt="hero image"
+                priority
                 width={100}
                 height={400}
                 style={{

@@ -16,7 +16,6 @@ As a company specializing in both hardware and software development for virtual 
   - [Introduction](#introduction)
   - [Features](#features)
   - [Getting Started](#getting-started)
-  - [Usage](#usage)
   - [Contributing](#contributing)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
@@ -48,11 +47,6 @@ yarn dev
 pnpm dev
 ```
 
-## Usage
-
-You can access and explore the Haptechs Virtual Reality Website demo by visiting the following link: [Demo Website](https://haptechs-demo.example.com).
-
-Please keep in mind that this is a simulated representation of our future website and does not include real product information, functionality, or live interactions.
 
 ## Contributing
 
