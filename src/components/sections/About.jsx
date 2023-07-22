@@ -24,7 +24,7 @@ export default function About() {
         </div>
 
         <div className='w-full px-4 py-6 md:py-0'>
-          <h2 className="text-3xl md:text-4xl md:leading-[1.5rem] font-bold">
+          <h2 className="text-3xl md:text-4xl  font-bold">
             Unlock Your Imagination. <br />
             <span className="bg-gradient-to-l from-[#FA4872] from-[36.89%] to-[#FFC56D] to-[81.52%] bg-clip-text text-transparent">
               Haptechs
