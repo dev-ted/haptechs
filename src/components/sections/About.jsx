@@ -12,10 +12,10 @@ export default function About() {
           <div className="absolute w-full h-full z-50 left-0 -top-32 md:top-0 md:left-12">
             <Image
               className=" object-contain w-[450px] h-[500px]"
-              src="https://res.cloudinary.com/devtedcloud/image/upload/v1690043853/hapetch/Rectangle_4_kmocvb.svg"
+              src="https://res.cloudinary.com/devtedcloud/image/upload/v1690043533/hapetch/Rectangle_4_2_oly6ya.png"
               alt=""
-              width={100}
-              height={400}
+              width={500}
+              height={500}
               style={{
                 objectFit: "contain",
               }}
@@ -23,7 +23,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className='w-full px-4 py-6 md:py-0'>
+        <div className="w-full px-4 py-6 md:py-0">
           <h2 className="text-3xl md:text-4xl  font-bold">
             Unlock Your Imagination. <br />
             <span className="bg-gradient-to-l from-[#FA4872] from-[36.89%] to-[#FFC56D] to-[81.52%] bg-clip-text text-transparent">
@@ -61,8 +61,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-     
     </section>
   );
 }

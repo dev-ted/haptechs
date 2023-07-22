@@ -10,7 +10,7 @@ export default function Hero() {
             <h1 className="text-2xl  md:text-5xl w-[40rem]  leading-[3.625rem] font-bold  bg-gradient-to-l from-[#FA4872] from-[36.89%] to-[#FFC56D] to-[81.52%] bg-clip-text text-transparent ">
               Beyond the Horizon. Haptechs VR ,<br /> Your Odyssey Awaits!
             </h1>
-           
+
             <p className="mt-4 text-sm font-light leading-5 sm:mt-8">
               Prepare to transcend the boundaries of reality and venture into
               the unknown with Haptechs VR. Our cutting-edge technology awaits,
@@ -36,11 +36,11 @@ export default function Hero() {
             <div className=" absolute w-full h-full z-50 left-0 -top-32 md:top-2 md:left-32">
               <Image
                 className=" w-[750px] h-[600px]"
-                src="https://res.cloudinary.com/devtedcloud/image/upload/v1690019107/hapetch/hero-image_2_z1sqvq.svg"
+                src="https://res.cloudinary.com/devtedcloud/image/upload/q_85/v1690018851/hapetch/wepik-export-20230722093619DDhE_1_l7hzab.webp"
                 alt="hero image"
                 priority
-                width={100}
-                height={400}
+                width={500}
+                height={500}
                 style={{
                   objectFit: "contain",
                 }}
