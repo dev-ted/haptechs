@@ -4,16 +4,17 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section className="w-full h-full relative z-0">
+    <section id="about" className="w-full min-h-[600px] py-10 relative z-0">
       <div className="max-w-screen-xl flex gap-10 md:flex-row flex-col md:py-20 mx-auto">
         <div className="max-w-[450px] relative h-full">
           <Eclipse />
 
           <div className="absolute w-full h-full z-50 left-0 -top-32 md:top-0 md:left-12">
             <Image
+              draggable={false}
               className=" object-contain w-[450px] h-[500px]"
               src="https://res.cloudinary.com/devtedcloud/image/upload/v1690043533/hapetch/Rectangle_4_2_oly6ya.png"
-              alt=""
+              alt="about us image"
               width={500}
               height={500}
               style={{
@@ -24,7 +25,7 @@ export default function About() {
         </div>
 
         <div className="w-full px-4 py-6 md:py-0">
-          <h2 className="text-3xl md:text-4xl  font-bold">
+          <h2 className="text-2xl md:text-4xl  font-bold">
             Unlock Your Imagination. <br />
             <span className="bg-gradient-to-l from-[#FA4872] from-[36.89%] to-[#FFC56D] to-[81.52%] bg-clip-text text-transparent">
               Haptechs

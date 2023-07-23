@@ -5,11 +5,11 @@ export default function PreOrder() {
   return (
     <div className="group">
       <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-gradient-orange to-gradient-pink group-hover:shadow-lg group-hover:shadow-orange-500/50"></div>
-      <Link
-        href="/"
+      <button
+      role="button"
         title="predorder"
         className="relative inline-flex items-center justify-center px-6 py-1 text-sm font-light text-white bg-black border border-transparent rounded-[3.75rem]"
-        role="button"
+     
       >
         Preorder
         <svg
@@ -24,7 +24,7 @@ export default function PreOrder() {
             clipRule="evenodd"
           />
         </svg>
-      </Link>
+      </button>
     </div>
   );
 }

@@ -7,11 +7,12 @@ import PreOrder from "@/components/ui/Button";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  console.log(mobileMenuOpen);
 
   const navigation = [
-    { name: "Who we are", href: "/" },
-    { name: "Products", href: "/" },
-    { name: "Meet the team", href: "/" },
+    { name: "Who we are", href: "/#about" },
+    { name: "Products", href: "/#products" },
+    { name: "Meet the team", href: "/#team" },
   ];
   return (
     <header className="fixed h-fit bg-transparent  inset-x-0 w-full text-white backdrop-blur-sm top-0 z-50">
@@ -35,10 +36,11 @@ export default function Header() {
             />
           </Link>
 
-          <ul className="hidden md:flex gap-4 lg:flex lg:gap-x-12">
+          <ul className="hidden  md:flex gap-4 lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <li key={item.name} className="text-xs">
                 <Link
+                  scroll={true}
                   href={item.href}
                   className="text-xs font-light  leading-6 bg-gradient-to-r from-gradient-orange to-gradient-pink bg-clip-text hover:text-transparent  "
                 >
@@ -97,17 +99,20 @@ export default function Header() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+              <ul className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block text-white rounded-lg px-3 py-2 text-base font-semibold leading-7 "
-                  >
-                    {item.name}
-                  </Link>
+                  <li key={item.name}>
+                    <Link
+                      onClick={() => setMobileMenuOpen(false)}
+                      scroll={true}
+                      href={item.href}
+                      className="-mx-3 block text-white rounded-lg px-3 py-2 text-base font-semibold leading-7 "
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
         </Dialog.Panel>

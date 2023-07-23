@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Head from "next/head";
+import Products from "@/components/sections/Products";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,6 +16,8 @@ export default function Home() {
       <Head>
         <title>Experience Innovation, Embrace Haptechs</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Haptechs" />
+        
       </Head>
       <Header />
 
@@ -22,6 +25,8 @@ export default function Home() {
         <Hero />
 
         <About />
+
+        <Products />
       </main>
     </div>
   );
