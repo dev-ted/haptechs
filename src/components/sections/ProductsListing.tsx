@@ -51,10 +51,13 @@ export default function ProductsListing() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center px-4 ">
         {products?.map(({ id, title, description, image, price }) => (
-          <div key={id} className="relative h-48 w-96 rounded-[0.625rem]  ">
+          <div
+            key={id}
+            className="relative h-48 w-80 lg:w-96rounded-[0.625rem]  "
+          >
             <Image
               draggable={false}
-              className="object-cover h-48 w-96"
+              className="object-cover h-48 w-80 lg:w-96"
               src={image}
               alt={title}
               width={200}
@@ -72,8 +75,6 @@ export default function ProductsListing() {
           </div>
         ))}
       </div>
-
-    
     </div>
   );
 }
