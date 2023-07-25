@@ -23,13 +23,14 @@ export default function ProductSectionCard({
         direction === "normal" ? " md:flex-row" : " md:flex-row-reverse"
       } flex-col`}
     >
-      <div className="max-w-[500px] flex relative h-full">
+      <div className="max-w-[500px]  relative h-full">
         <Eclipse />
 
-        <div className="absolute w-full h-fit z-50 left-0 -top-10 md:top-0 md:left-2">
+        <div className="  w-full h-fit ">
           <Image
             draggable={false}
-            className=" object-cover h-full w-[400px]"
+            className=" object-cover absolute -top-10 lg:top-0 lg:right-20  z-50
+             border h-full max-w-[400px]  w-full"
             src={image}
             alt={title}
             width={500}

@@ -17,7 +17,7 @@ export default function ProductPreview({title,image,description,price} : {title:
         onClick={() => {
           setLayout("center");
         }}
-        className="absolute top-4 right-0 max-w-[10.8125rem] py-1 px-5 rounded-[5px] cursor-pointer bg-black border border-gradient-pink text-xs font-light text-center "
+        className="absolute lg:top-0 top-4 right-0 max-w-[10.8125rem] py-1 px-5 rounded-[5px] cursor-pointer bg-black border border-gradient-pink text-xs font-light text-center "
       >
         Preview
       </button>

@@ -53,7 +53,7 @@ export default function ProductsListing() {
         {products?.map(({ id, title, description, image, price }) => (
           <div
             key={id}
-            className="relative h-48 w-80 lg:w-96rounded-[0.625rem]  "
+            className="relative h-48 w-80 lg:w-96 rounded-[0.625rem]  "
           >
             <Image
               draggable={false}
