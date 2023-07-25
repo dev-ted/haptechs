@@ -23,7 +23,7 @@ export default function ProductPreview({title,image,description,price} : {title:
       </button>
       <Modal open={!!layout} onClose={() => setLayout(undefined)}>
         <ModalDialog
-          className="w-[900px] h-fit rounded-md p-3 shadow-md"
+          className="max-w-screen-lg  lg:h-fit h-screen rounded-md p-3 shadow-md"
           aria-labelledby="layout-modal-title"
           aria-describedby="layout-modal-description"
           layout={layout}
@@ -76,7 +76,7 @@ export default function ProductPreview({title,image,description,price} : {title:
               </div>
 
               <div className="w-full ">
-                <h5 className="text-2xl py-1 font-bold">{title}</h5>
+                <h5 className="text-lg lg:text-2xl  py-1 font-bold">{title}</h5>
 
                 <span className="font-semibold italic">R {price}</span>
 

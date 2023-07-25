@@ -30,7 +30,7 @@ export default function ProductSectionCard({
           <Image
             draggable={false}
             className=" object-cover absolute -top-10 lg:top-0 lg:right-20  z-50
-             border h-full max-w-[400px]  w-full"
+              h-full max-w-[400px]  w-full"
             src={image}
             alt={title}
             width={500}
