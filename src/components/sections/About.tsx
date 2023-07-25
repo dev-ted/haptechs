@@ -33,7 +33,7 @@ export default function About() {
             {`'`} Next-Gen VR Takes You There!
           </h2>
 
-          <div className=" h-full w-full md:ml-20 py-10 ">
+          <div className=" h-full w-full lg:ml-20 py-10 ">
             <p className="text-sm font-normal leading-[1.5rem] max-w-xl py-2">
               Founded in 2022, Haptech is a visionary startup on a mission to
               redefine the virtual reality landscape. Specializing in

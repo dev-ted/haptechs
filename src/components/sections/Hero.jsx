@@ -3,7 +3,7 @@ import PreOrder from "../ui/Button";
 import Image from "next/image";
 export default function Hero() {
   return (
-    <section className="relative py-10    bg-black text-white ">
+    <section className="relative py-10 overflow-hidden   bg-black text-white ">
       <div className="px-4 mx-auto  max-w-screen-xl w-full">
         <div className="grid items-center  grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-2">
           <div className=" h-full flex flex-col gap-6 py-20 md:py-36 ">
@@ -16,17 +16,11 @@ export default function Hero() {
               the unknown with Haptechs VR. Our cutting-edge technology awaits,
               ready to transport you on an odyssey like no other.
             </p>
-            <div className="flex items-center gap-10 md:mt-6">
+            <div className="flex items-center  gap-10 md:mt-6">
               <div className="relative  items-center justify-center inline-flex group">
                 <PreOrder />
               </div>
-              <button
-                name="watch"
-                role="button"
-                className=" relative inline-flex items-center justify-center px-6 py-2 text-sm font-light text-white bg-black border  rounded-[3.75rem]"
-              >
-                watch video
-              </button>
+           
             </div>
           </div>
 

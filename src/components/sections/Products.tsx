@@ -4,6 +4,7 @@ import React from 'react'
 import Gaming from './products-sections/Gaming';
 import Social from './products-sections/Social';
 import Entertaiment from './products-sections/Entertaiment';
+import ProductsListing from './ProductsListing';
 
 export default function Products() {
 
@@ -39,7 +40,7 @@ export default function Products() {
         <h3 className=" text-2xl md:text-3xl font-bold text-center ">
           Marvels Unveiled. Explore Our Exquisite Product Line
         </h3>
-        <div className="grid grid-cols-1 items-center lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 justify-items-center items-center lg:grid-cols-3 gap-10">
           {services.map(({ name, description, image, link }) => (
             <div
               key={name}
@@ -72,6 +73,10 @@ export default function Products() {
         <Gaming />
         <Social />
         <Entertaiment />
+
+        <ProductsListing />
+
+
       </div>
     </section>
   );

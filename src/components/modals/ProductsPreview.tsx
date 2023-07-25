@@ -7,7 +7,7 @@ import Image from "next/image";
 import PreOrder from "../ui/Button";
 
 
-export default function ProductPreview() {
+export default function ProductPreview({title,image,description,price} : {title:string,image:string,description:string,price:number}) {
   const [layout, setLayout] = React.useState<
     ModalDialogProps["layout"] | undefined
   >(undefined);
@@ -23,7 +23,7 @@ export default function ProductPreview() {
       </button>
       <Modal open={!!layout} onClose={() => setLayout(undefined)}>
         <ModalDialog
-          className="w-[700px] h-fit rounded-md p-3 shadow-md"
+          className="w-[900px] h-fit rounded-md p-3 shadow-md"
           aria-labelledby="layout-modal-title"
           aria-describedby="layout-modal-description"
           layout={layout}
@@ -59,15 +59,16 @@ export default function ProductPreview() {
               />
             </div>
 
-            <div className="flex gap-8 items-center  ">
+            <div className="flex gap-8 items-center md:flex-row flex-col  ">
               <div className="w-full">
                 <Image
                   draggable={false}
-                  className="object-contain w-[450px] h-full"
-                  src="https://res.cloudinary.com/devtedcloud/image/upload/v1690116301/hapetch/Rectangle_8_2_xx2r1q.png"
-                  alt={"title"}
+                  className="object-cover h-48 w-96"
+                  src={image}
+                  alt={title}
                   width={500}
                   height={500}
+                  priority
                   style={{
                     objectFit: "contain",
                   }}
@@ -75,14 +76,11 @@ export default function ProductPreview() {
               </div>
 
               <div className="w-full ">
-                <h5 className="text-3xl font-bold">name</h5>
+                <h5 className="text-2xl py-1 font-bold">{title}</h5>
 
-                <span>R 4500</span>
+                <span className="font-semibold italic">R {price}</span>
 
-                <p className="text-sm  font-normal py-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus ut ipsa voluptates laboriosam, nemo porro.
-                </p>
+                <p className="text-sm  font-normal py-3">{description}</p>
                 <div className="relative  items-center justify-center inline-flex group">
                   <PreOrder />
                 </div>

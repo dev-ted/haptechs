@@ -4,6 +4,10 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Head from "next/head";
 import Products from "@/components/sections/Products";
+import Team from "@/components/sections/Team";
+import CountDown from "@/components/ui/CountDown";
+import CountDownSection from "@/components/sections/count-down-section/CountDownSection";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,7 +31,11 @@ export default function Home() {
         <About />
 
         <Products />
+        <Team />
+     <CountDownSection />
       </main>
+
+      <Footer />
     </div>
   );
 }
