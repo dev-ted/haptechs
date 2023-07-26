@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="px-4 mx-auto  max-w-screen-xl w-full">
         <div className="grid items-center  grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-2">
           <div className=" h-full flex flex-col gap-6 py-20 md:py-36 ">
-            <h1 className="text-2xl  md:text-5xl max-w-[40rem] w-full  leading-[3.625rem] font-bold  bg-gradient-to-l from-[#FA4872] from-[36.89%] to-[#FFC56D] to-[81.52%] bg-clip-text text-transparent ">
+            <h1 className="text-2xl  md:text-5xl max-w-[40rem] w-full  md:leading-[3.625rem] font-bold  bg-gradient-to-l from-[#FA4872] from-[36.89%] to-[#FFC56D] to-[81.52%] bg-clip-text text-transparent ">
               Beyond the Horizon. Haptechs VR ,<br /> Your Odyssey Awaits!
             </h1>
 
