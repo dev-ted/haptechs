@@ -29,14 +29,17 @@ export default function ProductSectionCard({
         <div className="  w-full h-fit ">
           <Image
             draggable={false}
-            className=" object-cover absolute -top-10 lg:top-0 lg:right-20  z-50
-              h-full max-w-[400px]  w-full"
+            className=" object-contain absolute -top-10 lg:top-0 lg:right-20  z-50
+              h-full m  w-full"
             src={image}
             alt={title}
             width={500}
             height={500}
             style={{
               objectFit: "contain",
+              width: "auto",
+              height: "auto",
+
             }}
           />
         </div>

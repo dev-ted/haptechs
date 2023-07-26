@@ -9,7 +9,7 @@ export default function About() {
         <div className="max-w-[450px] relative h-full">
           <Eclipse />
 
-          <div className="absolute w-full h-full z-50 left-0 -top-32 md:top-0 md:left-12">
+          <div className="absolute w-full h-full z-50 left-6 -top-32 md:top-0 md:left-12">
             <Image
               draggable={false}
               className=" object-contain w-[450px] h-[500px]"
