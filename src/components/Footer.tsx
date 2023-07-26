@@ -7,7 +7,10 @@ export default function Footer() {
     <footer className=" rounded-lg  bg-[#0A0909] ">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <Link href="/" className="flex items-center mb-4 sm:mb-0">
+          <Link
+            href="/"
+            className="flex items-center justify-center mb-4 sm:mb-0"
+          >
             <Image
               className="h-10 w-auto object-contain"
               src="https://res.cloudinary.com/devtedcloud/image/upload/v1690006884/hapetch/logo_4_zuqkvd.png"
@@ -20,7 +23,7 @@ export default function Footer() {
               }}
             />
           </Link>
-          <ul className="flex flex-wrap items-center mb-6 text-xs font-normal  sm:mb-0 ">
+          <ul className="flex flex-wrap items-center justify-center mb-6 text-xs font-normal  sm:mb-0 ">
             <li>
               <Link href="/" className="mr-4  md:mr-6 ">
                 Terms of use
@@ -39,9 +42,8 @@ export default function Footer() {
           </ul>
         </div>
 
-        <p className="block text-xs  w-full sm:text-center ">
-          © {new Date().getFullYear()}  
-           Haptechs. All Rights Reserved.
+        <p className="block text-xs  w-full text-center ">
+          © {new Date().getFullYear()} Haptechs. All Rights Reserved.
         </p>
       </div>
     </footer>
