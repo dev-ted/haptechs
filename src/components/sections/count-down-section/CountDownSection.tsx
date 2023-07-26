@@ -12,9 +12,9 @@ function CountDownSection() {
   return (
     <>
       <div className="min-h-screen flex flex-col items-center  md:py-[12.4rem] py-[10rem]  space-y-20">
-        <h6 className="text-white max-w-screen-lg text-sm md:text-6xl text-center font-bold capitalize  pt-1">
+        <h5 className="text-white max-w-screen-lg text-sm md:text-6xl text-center font-bold capitalize  pt-1">
           Embrace the Unseen. <br /> Our Spectacular Arrival!
-        </h6>
+        </h5>
 
         <div className="flex space-x-2 md:space-x-7">
           <CountDown value={days} name="Days" />

@@ -19,6 +19,8 @@ export default function About() {
               height={500}
               style={{
                 objectFit: "contain",
+                width: "auto",
+                height: "auto",
               }}
             />
           </div>

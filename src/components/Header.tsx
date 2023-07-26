@@ -7,7 +7,7 @@ import PreOrder from "@/components/ui/Button";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  console.log(mobileMenuOpen);
+
 
   const navigation = [
     { name: "Who we are", href: "/#about" },

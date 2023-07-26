@@ -34,7 +34,10 @@ export default function Hero() {
                 src="https://res.cloudinary.com/devtedcloud/image/upload/q_85/v1690018851/hapetch/wepik-export-20230722093619DDhE_1_l7hzab.webp"
                 alt="hero image"
                 priority
+                sizes="100vw"
                 loading="eager"
+                
+
                 width={500}
                 height={500}
                 style={{

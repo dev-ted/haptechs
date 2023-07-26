@@ -9,25 +9,25 @@ export default function Team() {
       name: "Clark Thompson",
       role: "The VR Architect",
       image:
-        "https://res.cloudinary.com/devtedcloud/image/upload/v1690295009/hapetch/IMG_uorstg.png",
+        "https://res.cloudinary.com/devtedcloud/image/upload/v1690295009/hapetch/IMG_uorstg.webp",
     },
     {
       name: "Sasha Williams",
       role: "The VR Maestro",
       image:
-        "https://res.cloudinary.com/devtedcloud/image/upload/v1690295009/hapetch/IMG_1_p9l4cj.png",
+        "https://res.cloudinary.com/devtedcloud/image/upload/v1690295009/hapetch/IMG_1_p9l4cj.webp",
     },
     {
       name: "Trevor Jackson",
       role: "The VR Maverick",
       image:
-        "https://res.cloudinary.com/devtedcloud/image/upload/v1690295009/hapetch/IMG_2_ptkxgg.png",
+        "https://res.cloudinary.com/devtedcloud/image/upload/v1690295009/hapetch/IMG_2_ptkxgg.webp",
     },
     {
       name: "Amir Patel",
       role: "The VR Engineer",
       image:
-        "https://res.cloudinary.com/devtedcloud/image/upload/v1690295009/hapetch/IMG_3_vumv3g.png",
+        "https://res.cloudinary.com/devtedcloud/image/upload/v1690295009/hapetch/IMG_3_vumv3g.webp",
     },
   ];
   return (
@@ -44,10 +44,12 @@ export default function Team() {
         <div className="grid max-w-7xl grid-cols-1 px-5 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20">
           {teamsItems?.map(({ name, role, image }) => (
             <div key = {name}>
-              <img
-                className="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 "
+              <Image
+                className="object-contain w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 "
                 src={image}
                 alt={name}
+                width={200}
+                height={200}
                
               />
               <p className="mt-5 text-lg font-semibold ">
